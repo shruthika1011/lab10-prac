@@ -35,6 +35,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ./FRONTEND-SPORTS
-          file: ./FROTNEND-SPORTS/frontend.Dockerfile
+          file: ./FRONTEND-SPORTS/frontend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/dockerfrontend:latest
