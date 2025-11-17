@@ -16,7 +16,7 @@ services:
     image: shruthikaaa10/dockerbackend:latest
     container_name: springboot
     ports:
-      - "2025:2000"
+      - "1234:2000"
     depends_on:
       - mysqldb
     restart: on-failure
@@ -27,7 +27,7 @@ services:
     image: shruthikaaa10/dockerfrontend:latest
     container_name: react
     ports:
-      - "3000:80"
+      - "5678:80"
     depends_on:
       - backend
     restart: on-failure
